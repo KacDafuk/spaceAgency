@@ -1,0 +1,118 @@
+.planet {
+  color: var(--primary);
+  width: 80%;
+  flex-shrink: 0;
+  display: flex;
+  margin-top: 2rem;
+  column-gap: 7rem;
+  flex-direction: column;
+  align-items: center;
+}
+.planetWrapper {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+.imageWrapper {
+  display: grid;
+  position: center;
+}
+.planetImage {
+  height: 100%;
+  width: 100%;
+}
+.planetAbout {
+  width: 100%;
+  text-align: center;
+}
+.planetList {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+  font-size: var(--font-md);
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 3.5rem;
+}
+
+.planetHeader {
+  font-size: var(--font-bg);
+  letter-spacing: 0.5rem;
+}
+.planetDescription {
+  color: var(--lead);
+  margin-top: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px var(--lead) solid;
+}
+.planetInfoList {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 1.5rem 0;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.planetInfoList > li > div:nth-child(2) {
+  margin-top: 0.5rem;
+  color: var(--lead);
+}
+.activePlanet {
+  border-bottom: 1px var(--primary) solid;
+}
+.planetImage {
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px;
+
+  animation: planetSpin 7s linear infinite;
+}
+@media all and (min-width: 485px) {
+  .planetInfoList {
+    flex-direction: row;
+  }
+  .planetList {
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 1.5rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .imageWrapper {
+    width: 50%;
+  }
+  .planetAbout {
+    width: 50%;
+  }
+  .planet {
+    width: 60%;
+    height: 100%;
+    margin: 5rem auto 0 auto;
+    flex-direction: row;
+  }
+  .planetAbout {
+    text-align: left;
+  }
+  .planetInfoList {
+    justify-content: space-between;
+  }
+  .planetList {
+    justify-content: flex-start;
+  }
+}
+
+@keyframes planetSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

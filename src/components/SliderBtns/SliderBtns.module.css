@@ -1,0 +1,18 @@
+.sliderBtnPrev,
+.sliderBtnNext {
+  transition: all 0.4s;
+  color: var(--lead);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.sliderBtnPrev:hover,
+.sliderBtnNext:hover {
+  color: var(--primary);
+}
+.sliderBtnPrev {
+  left: 20px;
+}
+.sliderBtnNext {
+  right: 20px;
+}

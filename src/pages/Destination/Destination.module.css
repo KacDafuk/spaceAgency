@@ -1,0 +1,6 @@
+.planetsSlider {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  transition: 0.4s all;
+}

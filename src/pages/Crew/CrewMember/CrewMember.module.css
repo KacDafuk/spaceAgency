@@ -1,0 +1,102 @@
+.crewMember {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  column-gap: 4rem;
+}
+.crewMemberWrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.crewMemberInfo,
+.crewMemberImage {
+  width: 100%;
+}
+.crewMemberInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+.crewMemberImage {
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  margin-top: 5rem;
+}
+.crewMemberName {
+  color: var(--primary);
+  font-size: var(--font-bg);
+}
+.crewMemberPosition {
+  color: var(--secondary);
+  font-size: var(--font-md);
+  line-height: 1.5rem;
+}
+.crewMemberDescription {
+  color: var(--lead);
+  font-size: var(--font-sm);
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  width: 70%;
+  margin-top: 2.5rem;
+}
+.sliderNavigationBtn,
+.sliderNavigationBtnActive {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.sliderNavigationBtnActive,
+.sliderNavigationBtn:hover {
+  background-color: var(--secondary);
+  transform: scale(1.4);
+}
+.crewNavigation {
+  display: flex;
+  column-gap: 1.2rem;
+  margin-top: 4rem;
+}
+@media all and (min-width: 772px) {
+  .crewMemberImage {
+    background-size: 50% 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .crewMember {
+    flex-direction: row;
+  }
+  .crewMemberInfo,
+  .crewMemberImage {
+    width: 50%;
+  }
+  .crewMemberImage {
+    background-size: 70% 100%;
+  }
+  .crewMemberDescription {
+    color: var(--lead);
+    font-size: var(--font-sm);
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .crewMemberInfo {
+    text-align: left;
+  }
+  .crewMemberDescription {
+    width: 100%;
+  }
+  .crewMemberInfo {
+    align-items: flex-start;
+  }
+}

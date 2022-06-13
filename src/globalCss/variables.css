@@ -1,0 +1,24 @@
+:root {
+  /***colors***/
+  --primary: white;
+  --secondary: #8b7679;
+  --lead: rgb(167, 167, 167);
+  --lead-lighter: rgb(200, 200, 200);
+  /***BREAK POINTS***/
+  /* While they aren't directly used in the code the serve
+  as an orientation as to when media queries should be used */
+  --screen-md: 772px;
+  --screen-lg: 992px;
+  /***FONT SIZES ***/
+  --font-sm: 0.75rem;
+  --font-md: 1.5rem;
+  --font-bg: 5rem;
+  --left-indent: 5rem;
+}
+@media all and (max-width: 772px) {
+  :root {
+    --left-indent: 3rem;
+    --font-bg: 3rem;
+    --font-md: 1.2rem;
+  }
+}

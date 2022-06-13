@@ -1,0 +1,101 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0rem 1rem 3rem;
+  align-items: center;
+  z-index: 20;
+  position: relative;
+}
+.navLogo {
+  background-image: url(../../assets/shared/logo.svg);
+  height: 50px;
+  width: 50px;
+  background-size: 100% 100%;
+}
+.navLinks {
+  background-color: rgba(128, 109, 109, 0.254);
+  backdrop-filter: blur(10px);
+  display: flex;
+  width: 60%;
+  justify-content: flex-start;
+  column-gap: 2.5rem;
+  padding: 2rem 2.5rem 2rem 2rem;
+  display: none;
+}
+.navLinks a {
+  text-decoration: underline;
+  transition: text-decoration-color 300ms;
+  text-decoration-color: rgba(255, 255, 255, 0);
+  text-underline-offset: 1rem;
+}
+.navLinks a:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+  text-underline-offset: 1rem;
+}
+.toggleBtn {
+  position: absolute;
+  right: 1rem;
+  display: block;
+  background-color: black;
+  color: var(--primary);
+  top: 2.7rem;
+  padding: 0.4em;
+  cursor: pointer;
+  z-index: 200;
+}
+.activeLink {
+  text-decoration-color: var(--primary) !important;
+  text-underline-offset: 1rem !important;
+}
+
+@media all and (min-width: 992px) {
+  .toggleBtn {
+    display: none;
+  }
+  .navLinks {
+    display: flex;
+  }
+}
+@media all and (max-width: 992px) {
+  /***class only exists for devices with width lower than 992px
+    so when user resizes it to bigger ones it won't affect the nav displayed***/
+  .navActive,
+  .navHidden {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    row-gap: 2rem;
+    z-index: 100;
+  }
+
+  .navActive {
+    animation: showNav 0.4s forwards;
+  }
+  .navHidden {
+    animation: hideNav 0.4s forwards;
+  }
+}
+@keyframes showNav {
+  from {
+    right: -270px;
+    position: absolute;
+  }
+  to {
+    right: 0px;
+    position: absolute;
+  }
+}
+@keyframes hideNav {
+  from {
+    right: 0px;
+    position: absolute;
+  }
+  to {
+    right: -270px;
+    position: absolute;
+  }
+}

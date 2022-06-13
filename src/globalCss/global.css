@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Inter&family=Road+Rage&family=Shizuru&display=swap");
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  background-color: none;
+  cursor: pointer;
+  border: none;
+}
+a {
+  color: var(--primary) !important;
+  text-decoration: none;
+}

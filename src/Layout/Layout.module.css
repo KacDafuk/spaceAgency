@@ -1,0 +1,23 @@
+/* /* import HomeMobSrc from "./layoutImages/home/background-home-mobile.jpg";
+import HomeTabSrc from "./layoutImages/home/background-home-tablet.jpg";
+import HomeDeskSrc from "./layoutImages/home/background-home-desktop.jpg";
+import CrewMobSrc from "./layoutImages/home/background-crew-mobile.jpg";
+import CrewTabSrc from "./layoutImages/home/background-Crew-tablet.jpg";
+import CrewDeskSrc from "./layoutImages/home/background-Crew-desktop.jpg";
+import DestinationMobSrc from "./layoutImages/home/background-destination-mobile.jpg";
+import DestinationTabSrc from "./layoutImages/home/background-destination-tablet.jpg";
+import DestinationDeskSrc from "./layoutImages/home/background-destination-desktop.jpg";
+import TechnologyMobSrc from "./layoutImages/home/background-technology-mobile.jpg";
+import TechnologyTabSrc from "./layoutImages/home/background-technology-tablet.jpg";
+import TechnologyDeskSrc from "./layoutImages/home/background-technology-desktop.jpg"; */
+
+.layout {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -200;
+  width: 100%;
+  height: 100%;
+}

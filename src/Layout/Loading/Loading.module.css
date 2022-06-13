@@ -1,0 +1,38 @@
+.loadingWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+}
+.loading {
+  width: 200px;
+  height: 200px;
+  border: 10px var(--primary) solid;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading::after {
+  content: "";
+  display: block;
+  height: 140%;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  animation: loadingAnimation 1.4s infinite;
+}
+@keyframes loadingAnimation {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
