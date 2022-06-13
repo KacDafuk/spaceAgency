@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/spaceAgency/static/css/main.56bcc936.css",
+    "main.css": "/spaceAgency/static/css/main.beef9ca4.css",
     "main.js": "/spaceAgency/static/js/main.acf2f9ca.js",
     "static/media/image-victor-glover.png": "/spaceAgency/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/spaceAgency/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -28,11 +28,11 @@
     "static/media/background-destination-mobile.jpg": "/spaceAgency/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/spaceAgency/index.html",
     "static/media/logo.svg": "/spaceAgency/static/media/logo.565f7f2c0534403f11b7.svg",
-    "main.56bcc936.css.map": "/spaceAgency/static/css/main.56bcc936.css.map",
+    "main.beef9ca4.css.map": "/spaceAgency/static/css/main.beef9ca4.css.map",
     "main.acf2f9ca.js.map": "/spaceAgency/static/js/main.acf2f9ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.56bcc936.css",
+    "static/css/main.beef9ca4.css",
     "static/js/main.acf2f9ca.js"
   ]
 }
